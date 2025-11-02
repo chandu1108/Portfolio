@@ -6,8 +6,30 @@
     <title>Portfolio-ChandanKumarM</title>
     <link rel="stylesheet" href="./index.css">
     <style>
-        
-
+        .contactme{
+            border: 1px solid rgb(10, 5, 53);
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact{
+            width: 620px;
+            height: 300px;
+            border: 1px solid rgb(10, 4, 48);
+        }
+        .contact input{
+            border-radius: 10px;
+            border-color: rgb(165, 28, 210);
+            width: 300px;
+            height: 50px;
+        }
+        #message{
+            width: 615px;
+            height: 130px;
+            
+        }
     </style>
 </head>
 <body>
@@ -19,7 +41,7 @@
             <h5><a href="#">Home</a></h5>
             <h5><a href="#about">About</a></h5>
             <h5><a href="#pr">Projects</a></h5>
-            <h5><a href="#">Contact Me</a></h5>
+            <h5><a href="#contactme">Contact Me</a></h5>
         </div>
     </div>
     <div class="details" >
@@ -33,7 +55,7 @@
 JavaScript, ReactJs, JDBC, JSP, Spring Boot, with hands-on experience
 with the real-time Projects and I have interest on AWS, Cloud Deployment
 and Git, GitHub Experience.</pre><br>
-                    <button>Download My Resume</button>
+                <button>Download My Resume</button>
             </div>
         </div>
         <div class="righ">
@@ -142,6 +164,29 @@ calculation using JavaScript.
             </pre>
         </div>
         </a>
+    </div><br><br>
+    <center><h1 id="contactme">Contact Me</h1></center><br>
+    <hr>
+    <div class="contactme">
+        <div class="contact">
+            <table cellpadding="10px" cellspacing="10px">
+                <tr>
+                    <td><input type="text" placeholder="Full Name"></td>
+                    <td><input type="text" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Phone Number"></td>
+                    <td><input type="text" placeholder="Subject"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="message" placeholder="Message"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <input type="submit" value="Send Message" style="margin-left: 260px; height:30px; width: 110px;"></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
 
