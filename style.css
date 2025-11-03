@@ -30,7 +30,7 @@
         .right{
             font-size: 25px;
             display: flex;
-            width: 600px;
+            width: 700px;
             justify-content: space-evenly;
             align-items: center;
         }
@@ -72,8 +72,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #060f34;
-            height: 650px;
+            border: 1px solid #040a33;
+            height: 550px;
             width: 100%;
         }
 
