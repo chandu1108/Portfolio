@@ -1,172 +1,330 @@
-body{
-        background-color: #070F2B;
-        color: #9290C3;
-    }
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
+/* -------------------
+   🌐 Global Styles
+------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        .navbar{
-            background-image: linear-gradient(to top right,#070F2B,#535C91,#070F2B);
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 90px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 1px solid rgb(2, 3, 48);
-            position: fixed;
-            z-index: 1000;
-        }
+body {
+  background-color: #070F2B;
+  color: #9290C3;
+  font-family: Arial, sans-serif;
+}
 
-        .left{
-            font-size: 21px;
-            margin-left: 20px;
-        }
-        
-        .right{
-            font-size: 25px;
-            display: flex;
-            width: 600px;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .details{
-            margin-top: 100px;
-            height: 450px;
-            width: 100%;
-            border: 1px solid rgb(9, 6, 45);
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .lef{
-            justify-content: center;
-            align-items: center;
-            height: 400px;
-            width: 600px;
-            border: 1px solid rgb(5, 5, 48);
-        }
-        .righ{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 400px;
-            width: 500px;
-            border: 1px solid rgb(7, 7, 41);
-        }
+/* -------------------
+   🧭 Navbar
+------------------- */
+.navbar {
+  background-image: linear-gradient(to top right, #070F2B, #535C91, #070F2B);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  padding: 0 20px;
+}
 
-        .r img{
-            border-radius: 50%;
-        }
+.left h1 a {
+  font-size: 1.5rem;
+  color: #9290C3;
+  text-decoration: none;
+}
 
-        .l{
-            margin-top: 80px;
-            margin-left: 30px;
-        }
+.right {
+  display: flex;
+  gap: 25px;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
 
-        #about{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #040b2f;
-            height: 650px;
-            width: 100%;
-        }
+.right a {
+  text-decoration: none;
+  color: #9290C3;
+  transition: color 0.3s ease;
+}
 
-        .aboutme{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            border:1px solid #030e2d;
-            height: 450px;
-            width: 90%;
-        }
+.right a:hover {
+  color: white;
+}
 
-        .leftabout{
-            height: 250px;
-            width: 260px;
-        }
+/* -------------------
+   🧍‍♂️ Hero Section
+------------------- */
+.details {
+  margin-top: 100px;
+  min-height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
-        .abtimg img{
-            border-radius: 50%;
-        }
+.lef, .righ {
+  flex: 1 1 350px;
+  max-width: 500px;
+  text-align: center;
+  margin: 10px;
+}
 
-        .rightabout{
-            text-align: center;
-            height: 250px;
-            width: 600px;
-            border: 1px solid #040d2d;
-        }
+.l h1 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
 
-        .rightabout h1{
-            font-size: 40px;
-        }
+pre {
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  text-align: left;
+}
 
-        pre{
-            font-size: 15px;
-        }
+.r img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 50%;
+}
 
-        .projects{
-            border: 1px solid rgb(10, 3, 46);
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 410px;
-            width: 100%;
-        }
-        
-        .proj{
-            border: 1px solid rgb(5, 3, 46);
-            box-shadow: inset 0 0 10px rgb(255, 255, 255);
-            border-radius: 8%;
-            text-align: center;
-            height: 370px;
-            width: 370px;
-            transition: transform 0.3s ease;
-        }
+/* Buttons */
+#resume {
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  width: 170px;
+  background-color: #9290C3;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 5px;
+}
 
-        .proj:hover{
-            transform: scale(1.05);
-        }
+#resume:hover {
+  transform: scale(1.1);
+}
 
-        .projects pre{
-            margin-top: 8px;
-        }
+/* -------------------
+   👤 About Section
+------------------- */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  width: 100%;
+}
 
-        .projects img{
-            margin-top: 14px;
-            border-radius: 15px;
-        }
+.aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+}
 
-        footer{
-            margin-top: 10px;
-            text-align: center;
-            height: 70px;
-        }
+.leftabout img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
 
-        a{
-            text-decoration: none;
-            color: #9290C3;
-            transition: transform 0.3s ease;
-        }
+.rightabout {
+  max-width: 600px;
+  text-align: center;
+}
 
-        .social-links {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
+.rightabout h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-        .social-links img {
-            width: 80px;
-            height: 80px;
-            transition: transform 0.3s ease;
-        }
+/* -------------------
+   💻 Projects
+------------------- */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
 
-        .social-links img:hover {
-            transform: scale(1.3);
-        }
+.proj {
+  background-color: #0e1a48;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  width: 300px;
+  padding: 20px;
+}
+
+.proj:hover {
+  transform: scale(1.05);
+}
+
+.proj img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* -------------------
+   📬 Contact
+------------------- */
+.contactme {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #8784d2;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.contact input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #8784d2;
+  background-color: transparent;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#message {
+  height: 120px;
+}
+
+[type="submit"] {
+  background-color: #9290C3;
+  color: black;
+  width: 150px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------------
+   🌐 Footer
+------------------- */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------
+   📱 Responsive Design
+------------------- */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .right {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lef, .righ {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .l h1 {
+    font-size: 1.2rem;
+  }
+
+  pre {
+    font-size: 0.85rem;
+  }
+
+  #resume {
+    width: 150px;
+    height: 30px;
+  }
+
+  .rightabout h1 {
+    font-size: 1.5rem;
+  }
+
+  .proj {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .left h1 a {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    margin-top: 120px;
+  }
+
+  .r img {
+    max-width: 250px;
+  }
+
+  .rightabout h1 {
+    font-size: 1.3rem;
+  }
+
+  pre {
+    font-size: 0.8rem;
+  }
+
+  footer img {
+    width: 50px;
+    height: 50px;
+  }
+}

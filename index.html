@@ -4,40 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-ChandanKumarM</title>
-    <link rel="stylesheet" href="./index.css">
-    <style>
-        .contactme{
-            border: 1px solid rgb(10, 5, 53);
-            height: 400px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact{
-            width: 620px;
-            height: 300px;
-            border: 1px solid rgb(10, 4, 48);
-        }
-        .contact input{
-            color: rgb(9, 18, 35);
-            background-color: rgba(240, 248, 255, 0);
-            border-radius: 10px;
-            border-color: #8784d2;
-            width: 300px;
-            height: 50px;
-        }
-        #message{
-            width: 615px;
-            height: 130px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="navbar">
         <div class="left" id="home">
-            <h1>Chandan Kumar M</h1>
+            <h1><a href="">Chandan Kumar M</a></h1>
         </div>
         <div class="right">
             <h5><a href="#">Home</a></h5>
@@ -57,7 +29,8 @@
 JavaScript, ReactJs, JDBC, JSP, Spring Boot, with hands-on experience
 with the real-time Projects and I have interest on AWS, Cloud Deployment
 and Git, GitHub Experience.</pre><br>
-                <button>Download My Resume</button>
+                <button id="resume"><a style="color: black;" target="_blank" href="./CHANDAN KUMAR M..pdf">Download My Resume</a></button> &nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="resume"><a style="color: black;" target="_blank" href="https://chandu1108.github.io/Chadan-Kumar-M-Resume/">View My Resume</a></button>
             </div>
         </div>
         <div class="righ">
@@ -167,27 +140,29 @@ calculation using JavaScript.
         </div>
         </a>
     </div><br><br>
-    <center><h1 id="contactme">Contact Me</h1></center><br>
-    <hr>
-    <div class="contactme">
-        <div class="contact">
-            <table cellpadding="10px" cellspacing="10px">
-                <tr>
-                    <td><input type="text" placeholder="Full Name"></td>
-                    <td><input type="text" placeholder="Email"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Phone Number"></td>
-                    <td><input type="text" placeholder="Subject"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="text" id="message" placeholder="Message"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" >
-                    <input type="submit" value="Send Message" style="background-color: #9290C3; margin-left: 260px; height:30px; width: 110px;"></td>
-                </tr>
-            </table>
+
+    <div id="contactme">
+        <center><h1>Contact Me</h1></center><br>
+        <div class="contactme">
+            <div class="contact">
+                <table cellpadding="10px" cellspacing="10px">
+                    <tr>
+                        <td><input type="text" placeholder="Full Name"></td>
+                        <td><input type="text" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Phone Number"></td>
+                        <td><input type="text" placeholder="Subject"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="message" placeholder="Message"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                        <input type="submit" value="Send Message" style="background-color: #9290C3; margin-left: 280px; height:30px; width: 110px;"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </div>
